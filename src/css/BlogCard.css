@@ -1,0 +1,21 @@
+.card {
+  background-color: var(--secondary);
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.card p {
+  margin: 10px 0px;
+}
+
+.card-line {
+  border: 1px solid var(--primary);
+  margin: 20px 0px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

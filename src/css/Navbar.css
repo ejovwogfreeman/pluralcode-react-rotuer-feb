@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+nav a {
+  color: var(--light);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+nav button {
+  margin-left: 10px;
+}

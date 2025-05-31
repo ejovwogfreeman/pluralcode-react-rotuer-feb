@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #116b68;
+  --secondary: #0a4846;
+  --light: #f2f2f2;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.container {
+  padding: 20px 20%;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--light);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--light);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 20px 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 20px 3%;
+  }
+}
