@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import BlogCard from "../components/BlogCard";
 
-const Blog = ({ blogs }) => {
+const Blog = ({ blogs, deleteBlog }) => {
   const params = useParams();
 
   return (
@@ -10,7 +10,12 @@ const Blog = ({ blogs }) => {
       {blogs.map(
         (blog) =>
           blog.id === params.id && (
-            <BlogCard blog={blog} key={blog.id} paramsId={params.id} />
+            <BlogCard
+              blog={blog}
+              key={blog.id}
+              paramsId={params.id}
+              deleteBlog={deleteBlog}
+            />
           )
       )}
     </div>

@@ -1,6 +1,7 @@
 import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import { FaBlog } from "react-icons/fa";
 
 const Navbar = ({ user }) => {
   const logout = () => {
@@ -13,7 +14,12 @@ const Navbar = ({ user }) => {
   return (
     <nav className="container">
       <Link to="/">
-        <h1>Logo</h1>
+        <h1
+          style={{ display: "flex", alignItems: "center", marginLeft: "-10px" }}
+        >
+          <FaBlog />
+          <span style={{ marginLeft: "5px" }}>DojoBlog</span>
+        </h1>
       </Link>
       <ul>
         {!user ? (
